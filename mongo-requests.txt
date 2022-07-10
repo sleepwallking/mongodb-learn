@@ -1,0 +1,12 @@
+db.users.bulkWrite([
+    {
+        insertOne: {
+            document: {name: "anya", age: 22}
+        }
+    },
+    {
+        deleteOne: {
+            filter: {name: "vlad"}
+        }
+    }
+])
